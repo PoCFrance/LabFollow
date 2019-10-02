@@ -59,3 +59,30 @@ typings/
 
 # next.js build output
 .next
+
+ios/.DS_Store
+ios/Build
+# Xcode ignores
+*.xcbkptlist
+*.xcuserstate
+*.xccheckout
+*project.xcworkspace/
+*xcuserdata/
+# UpdateFrameworks
+ios/UpdateFrameworks
+# carthage build generated
+ios/Carthage
+ios/Cartfile.resolved
+# build generated artifact
+*.ipa
+ios/report.xml
+*.dSYM*
+ios/node-assets/*
+
+ios/Gemfile*
+
+ios/Pods
+ios/Podfile.lock
+ios/DerivedData/*
+
+ios/.log
