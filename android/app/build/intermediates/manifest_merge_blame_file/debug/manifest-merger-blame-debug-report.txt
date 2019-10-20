@@ -30,35 +30,34 @@
 20-->/home/pmonnery/Delivery/PoC/LabFollow/android/app/src/main/AndroidManifest.xml:8:7-39
 21        android:roundIcon="@mipmap/ic_launcher_round"
 21-->/home/pmonnery/Delivery/PoC/LabFollow/android/app/src/main/AndroidManifest.xml:10:7-52
-22        android:testOnly="true"
-23        android:theme="@style/AppTheme"
-23-->/home/pmonnery/Delivery/PoC/LabFollow/android/app/src/main/AndroidManifest.xml:12:7-38
-24        android:usesCleartextTraffic="true" >
-24-->/home/pmonnery/Delivery/PoC/LabFollow/android/app/src/debug/AndroidManifest.xml:7:18-53
-25        <activity
-25-->/home/pmonnery/Delivery/PoC/LabFollow/android/app/src/main/AndroidManifest.xml:13:7-22:18
-26            android:name="com.labfollow.MainActivity"
-26-->/home/pmonnery/Delivery/PoC/LabFollow/android/app/src/main/AndroidManifest.xml:14:9-37
-27            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
-27-->/home/pmonnery/Delivery/PoC/LabFollow/android/app/src/main/AndroidManifest.xml:16:9-79
-28            android:label="@string/app_name"
-28-->/home/pmonnery/Delivery/PoC/LabFollow/android/app/src/main/AndroidManifest.xml:15:9-41
-29            android:windowSoftInputMode="adjustResize" >
-29-->/home/pmonnery/Delivery/PoC/LabFollow/android/app/src/main/AndroidManifest.xml:17:9-51
-30            <intent-filter>
-30-->/home/pmonnery/Delivery/PoC/LabFollow/android/app/src/main/AndroidManifest.xml:18:9-21:25
-31                <action android:name="android.intent.action.MAIN" />
-31-->/home/pmonnery/Delivery/PoC/LabFollow/android/app/src/main/AndroidManifest.xml:19:13-65
-31-->/home/pmonnery/Delivery/PoC/LabFollow/android/app/src/main/AndroidManifest.xml:19:21-62
-32
-33                <category android:name="android.intent.category.LAUNCHER" />
-33-->/home/pmonnery/Delivery/PoC/LabFollow/android/app/src/main/AndroidManifest.xml:20:13-73
-33-->/home/pmonnery/Delivery/PoC/LabFollow/android/app/src/main/AndroidManifest.xml:20:23-70
-34            </intent-filter>
-35        </activity>
-36        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
-36-->/home/pmonnery/Delivery/PoC/LabFollow/android/app/src/main/AndroidManifest.xml:23:7-84
-36-->/home/pmonnery/Delivery/PoC/LabFollow/android/app/src/main/AndroidManifest.xml:23:17-81
-37    </application>
-38
-39</manifest>
+22        android:theme="@style/AppTheme"
+22-->/home/pmonnery/Delivery/PoC/LabFollow/android/app/src/main/AndroidManifest.xml:12:7-38
+23        android:usesCleartextTraffic="true" >
+23-->/home/pmonnery/Delivery/PoC/LabFollow/android/app/src/debug/AndroidManifest.xml:7:18-53
+24        <activity
+24-->/home/pmonnery/Delivery/PoC/LabFollow/android/app/src/main/AndroidManifest.xml:13:7-22:18
+25            android:name="com.labfollow.MainActivity"
+25-->/home/pmonnery/Delivery/PoC/LabFollow/android/app/src/main/AndroidManifest.xml:14:9-37
+26            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+26-->/home/pmonnery/Delivery/PoC/LabFollow/android/app/src/main/AndroidManifest.xml:16:9-79
+27            android:label="@string/app_name"
+27-->/home/pmonnery/Delivery/PoC/LabFollow/android/app/src/main/AndroidManifest.xml:15:9-41
+28            android:windowSoftInputMode="adjustResize" >
+28-->/home/pmonnery/Delivery/PoC/LabFollow/android/app/src/main/AndroidManifest.xml:17:9-51
+29            <intent-filter>
+29-->/home/pmonnery/Delivery/PoC/LabFollow/android/app/src/main/AndroidManifest.xml:18:9-21:25
+30                <action android:name="android.intent.action.MAIN" />
+30-->/home/pmonnery/Delivery/PoC/LabFollow/android/app/src/main/AndroidManifest.xml:19:13-65
+30-->/home/pmonnery/Delivery/PoC/LabFollow/android/app/src/main/AndroidManifest.xml:19:21-62
+31
+32                <category android:name="android.intent.category.LAUNCHER" />
+32-->/home/pmonnery/Delivery/PoC/LabFollow/android/app/src/main/AndroidManifest.xml:20:13-73
+32-->/home/pmonnery/Delivery/PoC/LabFollow/android/app/src/main/AndroidManifest.xml:20:23-70
+33            </intent-filter>
+34        </activity>
+35        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+35-->/home/pmonnery/Delivery/PoC/LabFollow/android/app/src/main/AndroidManifest.xml:23:7-84
+35-->/home/pmonnery/Delivery/PoC/LabFollow/android/app/src/main/AndroidManifest.xml:23:17-81
+36    </application>
+37
+38</manifest>
