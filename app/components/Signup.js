@@ -15,49 +15,49 @@ export default class Signup extends React.Component {
     header: null,
   };
   render() {
-    const {navigate} = this.props.navigation;
+    const { navigate } = this.props.navigation;
     return (
       <LinearGradient
         style={styles.container}
         colors={["#00cdac", "#02aab0"]}
       >
-    <SafeAreaView>
-      {/* <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}> */}
-      <StackNavigatorHeader navigation={this.props.navigation} />
-    <View style={styles.container}>
-      <FAIcon name='handshake-o' size={90} color='#fff' style={styles.mainIcon} />
-        <Text style={styles.title}>
-          Account Creation
+        <SafeAreaView>
+          {/* <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}> */}
+          <StackNavigatorHeader navigation={this.props.navigation} />
+          <View style={styles.container}>
+            <FAIcon name='handshake-o' size={90} color='#fff' style={styles.mainIcon} />
+            <Text style={styles.title}>
+              Account Creation
         </Text>
-        <View style={styles.mainContainer}>
-            <Text style={styles.paragraph}>
-              Please choose the email address and a password you wish to use to login.
+            <View style={styles.mainContainer}>
+              <Text style={styles.paragraph}>
+                Please choose the email address and a password you wish to use to login.
             </Text>
-            {/* <Text style={styles.textfieldTitle}>Email</Text> */}
+              {/* <Text style={styles.textfieldTitle}>Email</Text> */}
               <View style={styles.textfieldContainer}>
-                <Icon style={styles.textfieldIcon} name="email" size={20} color="#fff"/>
+                <Icon style={styles.textfieldIcon} name="email" size={20} color="#fff" />
                 <TextInput placeholder="john.doe@email.com" placeholderTextColor="#ffffff77" autoCapitalize='none' style={styles.textfield}></TextInput>
               </View>
               {/* <Text style={styles.textfieldTitle}>Password</Text> */}
               <View style={styles.textfieldContainer}>
-                <Icon style={styles.textfieldIcon} name="locked" size={20} color="#fff"/>
+                <Icon style={styles.textfieldIcon} name="locked" size={20} color="#fff" />
                 <TextInput placeholder="password" placeholderTextColor="#ffffff77" autoCapitalize='none' secureTextEntry={true} style={styles.textfield}></TextInput>
               </View>
               <View style={styles.textfieldContainer}>
-                <Icon style={styles.textfieldIcon} name="locked" size={20} color="#fff"/>
+                <Icon style={styles.textfieldIcon} name="locked" size={20} color="#fff" />
                 <TextInput placeholder="confirm password" placeholderTextColor="#ffffff77" autoCapitalize='none' secureTextEntry={true} style={styles.textfield}></TextInput>
               </View>
-          <TouchableOpacity
-              onPress={() => navigate('SignupDetails')}>
+              <TouchableOpacity
+                onPress={() => navigate('SignupDetails')}>
                 <View style={styles.button}>
                   <Text style={styles.buttonText}>Create</Text>
                 </View>
               </TouchableOpacity>
-        </View>
-    </View>
-    {/* </TouchableWithoutFeedback> */}
-    </SafeAreaView>
-    </LinearGradient>
+            </View>
+          </View>
+          {/* </TouchableWithoutFeedback> */}
+        </SafeAreaView>
+      </LinearGradient>
     );
   }
 }

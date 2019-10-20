@@ -15,49 +15,49 @@ export default class SignupDetails extends React.Component {
     header: null,
   };
   render() {
-    const {navigate} = this.props.navigation;
+    const { navigate } = this.props.navigation;
     return (
       <LinearGradient
         style={styles.container}
         colors={["#00cdac", "#02aab0"]}
       >
-    <SafeAreaView>
-        {/* <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}> */}
-      <StackNavigatorHeader navigation={this.props.navigation} />
-    <View style={styles.container}>
-      <Icon name='person' size={90} color='#fff' style={styles.mainIcon} />
-        <Text style={styles.title}>
-          Welcome!
+        <SafeAreaView>
+          {/* <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}> */}
+          <StackNavigatorHeader navigation={this.props.navigation} />
+          <View style={styles.container}>
+            <Icon name='person' size={90} color='#fff' style={styles.mainIcon} />
+            <Text style={styles.title}>
+              Welcome!
         </Text>
-        <View style={styles.mainContainer}>
-            <Text style={styles.paragraph}>
-              Tell us more about you. Those informations will be used by your doctor(s) to send you studies. Please enter your name and your date of birth.
+            <View style={styles.mainContainer}>
+              <Text style={styles.paragraph}>
+                Tell us more about you. Those informations will be used by your doctor(s) to send you studies. Please enter your name and your date of birth.
             </Text>
-            {/* <Text style={styles.textfieldTitle}>Email</Text> */}
+              {/* <Text style={styles.textfieldTitle}>Email</Text> */}
               <View style={styles.textfieldContainer}>
-                <Icon style={styles.textfieldIcon} name="person" size={20} color="#fff"/>
+                <Icon style={styles.textfieldIcon} name="person" size={20} color="#fff" />
                 <TextInput placeholder="First Name" placeholderTextColor="#ffffff77" style={styles.textfield}></TextInput>
               </View>
               {/* <Text style={styles.textfieldTitle}>Password</Text> */}
               <View style={styles.textfieldContainer}>
-                <Icon style={styles.textfieldIcon} name="person" size={20} color="#fff"/>
+                <Icon style={styles.textfieldIcon} name="person" size={20} color="#fff" />
                 <TextInput placeholder="Last Name" placeholderTextColor="#ffffff77" secureTextEntry={true} style={styles.textfield}></TextInput>
               </View>
               <View style={styles.textfieldContainer}>
-                <Icon style={styles.textfieldIcon} name="date" size={20} color="#fff"/>
+                <Icon style={styles.textfieldIcon} name="date" size={20} color="#fff" />
                 <TextInput placeholder="MM/DD/YYYY" placeholderTextColor="#ffffff77" autoCapitalize='none' secureTextEntry={true} style={styles.textfield}></TextInput>
               </View>
-          <TouchableOpacity
-              onPress={() => navigate('Studies')}>
+              <TouchableOpacity
+                onPress={() => navigate('Studies')}>
                 <View style={styles.button}>
                   <Text style={styles.buttonText}>Done</Text>
                 </View>
               </TouchableOpacity>
-        </View>
-    </View>
-    {/* </TouchableWithoutFeedback> */}
-    </SafeAreaView>
-    </LinearGradient>
+            </View>
+          </View>
+          {/* </TouchableWithoutFeedback> */}
+        </SafeAreaView>
+      </LinearGradient>
     );
   }
 }

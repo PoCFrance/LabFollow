@@ -4,9 +4,9 @@ import Login from './app/components/Login'
 import Signup from './app/components/Signup'
 
 const MainNavigator = createStackNavigator({
-  Home: {screen: HomeScreen},
-  Login: {screen: Login},
-  Signup: {screen: Signup},
+  Home: { screen: HomeScreen },
+  Login: { screen: Login },
+  Signup: { screen: Signup },
 });
-  
+
 export default AppNavigator;

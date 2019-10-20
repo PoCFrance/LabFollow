@@ -13,47 +13,47 @@ export default class HomeScreen extends React.Component {
     header: null,
   };
   render() {
-    const {navigate} = this.props.navigation;
+    const { navigate } = this.props.navigation;
     return (
       <LinearGradient
         style={styles.container}
         colors={["#00cdac", "#02aab0"]}
       >
-      <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
-    <View style={styles.container}>
-        <Text style={styles.title}>
-          Lab Follow
+        <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
+          <View style={styles.container}>
+            <Text style={styles.title}>
+              Lab Follow
         </Text>
-        <View style={styles.mainContainer}>
-            <Text style={styles.paragraph}>
-              Please enter your email and password to login to LabFollow.
+            <View style={styles.mainContainer}>
+              <Text style={styles.paragraph}>
+                Please enter your email and password to login to LabFollow.
             </Text>
-            {/* <Text style={styles.textfieldTitle}>Email</Text> */}
+              {/* <Text style={styles.textfieldTitle}>Email</Text> */}
               <View style={styles.textfieldContainer}>
-                <Icon style={styles.textfieldIcon} name="email" size={20} color="#fff"/>
+                <Icon style={styles.textfieldIcon} name="email" size={20} color="#fff" />
                 <TextInput placeholder="john.doe@email.com" placeholderTextColor="#ffffff77" autoCapitalize='none' style={styles.textfield}></TextInput>
               </View>
               {/* <Text style={styles.textfieldTitle}>Password</Text> */}
               <View style={styles.textfieldContainer}>
-                <Icon style={styles.textfieldIcon} name="locked" size={20} color="#fff"/>
+                <Icon style={styles.textfieldIcon} name="locked" size={20} color="#fff" />
                 <TextInput placeholder="password" placeholderTextColor="#ffffff77" autoCapitalize='none' secureTextEntry={true} style={styles.textfield}></TextInput>
               </View>
-          <TouchableOpacity
-              onPress={() => navigate('Studies')}>
+              <TouchableOpacity
+                onPress={() => navigate('Studies')}>
                 <View style={styles.button}>
                   <Text style={styles.buttonText}>Login</Text>
                 </View>
               </TouchableOpacity>
-        </View>
-        <TouchableOpacity
+            </View>
+            <TouchableOpacity
               onPress={() => navigate('Signup')}>
-                <View style={styles.button2}>
-                  <Text style={styles.button2Text}>Create an Account</Text>
-                </View>
-              </TouchableOpacity>
-    </View>
-    </TouchableWithoutFeedback>
-    </LinearGradient>
+              <View style={styles.button2}>
+                <Text style={styles.button2Text}>Create an Account</Text>
+              </View>
+            </TouchableOpacity>
+          </View>
+        </TouchableWithoutFeedback>
+      </LinearGradient>
     );
   }
 }
