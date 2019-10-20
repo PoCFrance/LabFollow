@@ -1,9 +1,9 @@
 import React from 'react';
-import {createAppContainer} from 'react-navigation';
-import {StatusBar} from 'react-native'
-import {createStackNavigator} from 'react-navigation-stack';
+import { createAppContainer } from 'react-navigation';
+import { StatusBar } from 'react-native'
+import { createStackNavigator } from 'react-navigation-stack';
 import ApolloClient from 'apollo-boost';
-import { ApolloProvider } from '@apollo/react-hooks';  
+import { ApolloProvider } from '@apollo/react-hooks';
 import HomeScreen from './app/components/HomeScreen'
 import Login from './app/components/Login'
 import Signup from './app/components/Signup'
@@ -13,20 +13,20 @@ import Studies from './app/components/Studies'
 StatusBar.setBarStyle('light-content', true);
 
 const client = new ApolloClient({
-  uri: 'http://192.168.1.133:4000/',
+  uri: 'http://192.168.1.68:4000/',
 });
 
 const MainNavigator = createStackNavigator({
-  Home: {screen: HomeScreen},
-  Login: {screen: Login},
-  Signup: {screen: Signup},
-  SignupDetails: {screen: SignupDetails},
-  Studies: {screen: Studies}
+  Home: { screen: HomeScreen },
+  Login: { screen: Login },
+  Signup: { screen: Signup },
+  SignupDetails: { screen: SignupDetails },
+  Studies: { screen: Studies }
 });
 
 const Navigator = createAppContainer(MainNavigator);
 
-export default class App extends React.Component{
+export default class App extends React.Component {
   render() {
     return (
       <ApolloProvider client={client}>
