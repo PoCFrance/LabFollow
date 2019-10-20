@@ -9,10 +9,10 @@ export default class StudyBlock extends React.Component {
             <TouchableOpacity>
                 <Text style={styles.studyTitle}>{this.props.studyName}</Text>
                 <View style={styles.studyOverview}>
-                    <Text>By Dr. </Text>
+                    <Text>Dr. </Text>
                     <Text>{this.props.doctorName}</Text>
-                    <Text> - </Text>
-                    <Text>{this.props.studyCreationDate}</Text>
+                    {/* <Text> - </Text>
+                    <Text>{this.props.studyCreationDate}</Text> */}
                 </View>
             </TouchableOpacity>
             </View>
@@ -22,7 +22,7 @@ export default class StudyBlock extends React.Component {
 
 const styles = StyleSheet.create({
     container: {
-        width: '90%',
+        width: '1000%',
         padding: 20,
         borderBottomColor: '#ccc',
         borderBottomWidth: 1,
