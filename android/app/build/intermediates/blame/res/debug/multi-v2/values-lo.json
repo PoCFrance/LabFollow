@@ -4,7 +4,7 @@
             "outputFile": "/home/pmonnery/Delivery/PoC/LabFollow/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-lo/values-lo.xml",
             "map": [
                 {
-                    "source": "/home/pmonnery/.gradle/caches/transforms-2/files-2.1/1747fbe3cde0a6a63f9b0fcbcb5f0dcb/res/values-lo/values-lo.xml",
+                    "source": "/home/pmonnery/.gradle/caches/transforms-2/files-2.1/dfb17c32c9e1bced7bb89f3e844a7607/appcompat-1.0.2/res/values-lo/values-lo.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/home/pmonnery/.gradle/caches/transforms-2/files-2.1/d4884abdcae50e24eb7e310fed1129d8/res/values-lo/values-lo.xml",
+                    "source": "/home/pmonnery/.gradle/caches/transforms-2/files-2.1/46da25c3e2ae6308b2227b660caa604d/core-1.0.1/res/values-lo/values-lo.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

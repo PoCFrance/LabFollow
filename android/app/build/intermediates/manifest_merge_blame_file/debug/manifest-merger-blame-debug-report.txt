@@ -1,0 +1,64 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.labfollow"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+9        android:targetSdkVersion="28" />
+10
+11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+11-->/home/pmonnery/Delivery/PoC/LabFollow/android/app/src/debug/AndroidManifest.xml:5:5-77
+11-->/home/pmonnery/Delivery/PoC/LabFollow/android/app/src/debug/AndroidManifest.xml:5:22-75
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->/home/pmonnery/Delivery/PoC/LabFollow/android/app/src/main/AndroidManifest.xml:4:5-67
+12-->/home/pmonnery/Delivery/PoC/LabFollow/android/app/src/main/AndroidManifest.xml:4:22-64
+13
+14    <application
+14-->/home/pmonnery/Delivery/PoC/LabFollow/android/app/src/main/AndroidManifest.xml:6:5-24:19
+15        android:name="com.labfollow.MainApplication"
+15-->/home/pmonnery/Delivery/PoC/LabFollow/android/app/src/main/AndroidManifest.xml:7:7-38
+16        android:allowBackup="false"
+16-->/home/pmonnery/Delivery/PoC/LabFollow/android/app/src/main/AndroidManifest.xml:11:7-34
+17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+17-->[androidx.core:core:1.0.1] /home/pmonnery/.gradle/caches/transforms-2/files-2.1/46da25c3e2ae6308b2227b660caa604d/core-1.0.1/AndroidManifest.xml:22:18-86
+18        android:debuggable="true"
+19        android:icon="@mipmap/ic_launcher"
+19-->/home/pmonnery/Delivery/PoC/LabFollow/android/app/src/main/AndroidManifest.xml:9:7-41
+20        android:label="@string/app_name"
+20-->/home/pmonnery/Delivery/PoC/LabFollow/android/app/src/main/AndroidManifest.xml:8:7-39
+21        android:roundIcon="@mipmap/ic_launcher_round"
+21-->/home/pmonnery/Delivery/PoC/LabFollow/android/app/src/main/AndroidManifest.xml:10:7-52
+22        android:testOnly="true"
+23        android:theme="@style/AppTheme"
+23-->/home/pmonnery/Delivery/PoC/LabFollow/android/app/src/main/AndroidManifest.xml:12:7-38
+24        android:usesCleartextTraffic="true" >
+24-->/home/pmonnery/Delivery/PoC/LabFollow/android/app/src/debug/AndroidManifest.xml:7:18-53
+25        <activity
+25-->/home/pmonnery/Delivery/PoC/LabFollow/android/app/src/main/AndroidManifest.xml:13:7-22:18
+26            android:name="com.labfollow.MainActivity"
+26-->/home/pmonnery/Delivery/PoC/LabFollow/android/app/src/main/AndroidManifest.xml:14:9-37
+27            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+27-->/home/pmonnery/Delivery/PoC/LabFollow/android/app/src/main/AndroidManifest.xml:16:9-79
+28            android:label="@string/app_name"
+28-->/home/pmonnery/Delivery/PoC/LabFollow/android/app/src/main/AndroidManifest.xml:15:9-41
+29            android:windowSoftInputMode="adjustResize" >
+29-->/home/pmonnery/Delivery/PoC/LabFollow/android/app/src/main/AndroidManifest.xml:17:9-51
+30            <intent-filter>
+30-->/home/pmonnery/Delivery/PoC/LabFollow/android/app/src/main/AndroidManifest.xml:18:9-21:25
+31                <action android:name="android.intent.action.MAIN" />
+31-->/home/pmonnery/Delivery/PoC/LabFollow/android/app/src/main/AndroidManifest.xml:19:13-65
+31-->/home/pmonnery/Delivery/PoC/LabFollow/android/app/src/main/AndroidManifest.xml:19:21-62
+32
+33                <category android:name="android.intent.category.LAUNCHER" />
+33-->/home/pmonnery/Delivery/PoC/LabFollow/android/app/src/main/AndroidManifest.xml:20:13-73
+33-->/home/pmonnery/Delivery/PoC/LabFollow/android/app/src/main/AndroidManifest.xml:20:23-70
+34            </intent-filter>
+35        </activity>
+36        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+36-->/home/pmonnery/Delivery/PoC/LabFollow/android/app/src/main/AndroidManifest.xml:23:7-84
+36-->/home/pmonnery/Delivery/PoC/LabFollow/android/app/src/main/AndroidManifest.xml:23:17-81
+37    </application>
+38
+39</manifest>
