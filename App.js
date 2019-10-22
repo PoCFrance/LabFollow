@@ -9,11 +9,12 @@ import Login from './app/components/Login'
 import Signup from './app/components/Signup'
 import SignupDetails from './app/components/SignupDetails'
 import Studies from './app/components/Studies'
+import {uri as serverURL} from './app/network'
 
 StatusBar.setBarStyle('light-content', true);
 
 const client = new ApolloClient({
-  uri: 'http://192.168.1.68:4000/',
+  uri: serverURL,
 });
 
 const MainNavigator = createStackNavigator({

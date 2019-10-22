@@ -1,62 +1,93 @@
 import React from 'react';
-import { StyleSheet, Button, View, Text, TextInput, Keyboard } from 'react-native';
+import AsyncStorage from '@react-native-community/async-storage';
+import { StyleSheet, View, Text, TextInput, Keyboard, TouchableOpacity } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import Icon from 'react-native-vector-icons/Fontisto';
-import { TouchableOpacity, TouchableWithoutFeedback } from 'react-native-gesture-handler';
+import { TouchableWithoutFeedback } from 'react-native-gesture-handler';
+import { loginPatient } from '../network/login'
+
 
 Icon.loadFont();
 TextInput.defaultProps.selectionColor = 'white'
 
-export default class HomeScreen extends React.Component {
-  static navigationOptions = {
-    title: 'Welcome',
-    header: null,
+const HomeScreen = (props) => {
+
+  const [login, setLogin] = React.useState('jean@epitech.eu')
+  const [password, setPassword] = React.useState('azerty')
+
+  _storeData = async (key, value) => {
+    try {
+      await AsyncStorage.setItem(key, value);
+    } catch (error) { }
   };
-  render() {
-    const { navigate } = this.props.navigation;
-    return (
-      <LinearGradient
-        style={styles.container}
-        colors={["#00cdac", "#02aab0"]}
-      >
-        <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
-          <View style={styles.container}>
-            <Text style={styles.title}>
-              Lab Follow
+
+  const handleLogin = async () => {
+    console.log(login, password)
+    const token = await loginPatient(login, password)
+    console.log(token)
+
+    await _storeData('token', token)
+    props.navigation.navigate('Studies')
+  }
+
+  return (
+    <LinearGradient
+      style={styles.container}
+      colors={["#00cdac", "#02aab0"]}
+    >
+      <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
+        <View style={styles.container}>
+          <Text style={styles.title}>
+            Lab Follow
         </Text>
-            <View style={styles.mainContainer}>
-              <Text style={styles.paragraph}>
-                Please enter your email and password to login to LabFollow.
+          <View style={styles.mainContainer}>
+            <Text style={styles.paragraph}>
+              Please enter your email and password to login to LabFollow.
             </Text>
-              {/* <Text style={styles.textfieldTitle}>Email</Text> */}
-              <View style={styles.textfieldContainer}>
-                <Icon style={styles.textfieldIcon} name="email" size={20} color="#fff" />
-                <TextInput placeholder="john.doe@email.com" placeholderTextColor="#ffffff77" autoCapitalize='none' style={styles.textfield}></TextInput>
-              </View>
-              {/* <Text style={styles.textfieldTitle}>Password</Text> */}
-              <View style={styles.textfieldContainer}>
-                <Icon style={styles.textfieldIcon} name="locked" size={20} color="#fff" />
-                <TextInput placeholder="password" placeholderTextColor="#ffffff77" autoCapitalize='none' secureTextEntry={true} style={styles.textfield}></TextInput>
-              </View>
-              <TouchableOpacity
-                onPress={() => navigate('Studies')}>
-                <View style={styles.button}>
-                  <Text style={styles.buttonText}>Login</Text>
-                </View>
-              </TouchableOpacity>
+            <View style={styles.textfieldContainer}>
+              <Icon style={styles.textfieldIcon} name="email" size={20} color="#fff" />
+              <TextInput
+                placeholder="email"
+                placeholderTextColor="#ffffff77"
+                autoCapitalize='none'
+                style={styles.textfield}
+                onChangeText={text => setLogin(text)}
+                value={login}
+              />
             </View>
-            <TouchableOpacity
-              onPress={() => navigate('Signup')}>
-              <View style={styles.button2}>
-                <Text style={styles.button2Text}>Create an Account</Text>
+            <View style={styles.textfieldContainer}>
+              <Icon style={styles.textfieldIcon} name="locked" size={20} color="#fff" />
+              <TextInput
+                placeholder="password"
+                placeholderTextColor="#ffffff77"
+                autoCapitalize='none'
+                secureTextEntry={true}
+                style={styles.textfield}
+                onChangeText={text => setPassword(text)}
+                value={password}
+              />
+            </View>
+            <TouchableOpacity onPress={handleLogin}>
+              <View style={styles.button}>
+                <Text style={styles.buttonText}>Login</Text>
               </View>
             </TouchableOpacity>
           </View>
-        </TouchableWithoutFeedback>
-      </LinearGradient>
-    );
-  }
+          <TouchableOpacity onPress={() => props.navigation.navigate('Signup')}>
+            <View style={styles.button2}>
+              <Text style={styles.button2Text}>Create an Account</Text>
+            </View>
+          </TouchableOpacity>
+        </View>
+      </TouchableWithoutFeedback>
+    </LinearGradient>
+  );
 }
+
+HomeScreen.navigationOptions = {
+  title: 'Welcome',
+  header: null,
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -158,3 +189,5 @@ const styles = StyleSheet.create({
     color: '#fff',
   }
 });
+
+export default HomeScreen
