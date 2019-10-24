@@ -4,7 +4,7 @@
             "outputFile": "/home/pmonnery/Delivery/PoC/LabFollow/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-large-v4/values-large-v4.xml",
             "map": [
                 {
-                    "source": "/home/pmonnery/.gradle/caches/transforms-2/files-2.1/1747fbe3cde0a6a63f9b0fcbcb5f0dcb/res/values-large-v4/values-large-v4.xml",
+                    "source": "/home/pmonnery/.gradle/caches/transforms-2/files-2.1/dfb17c32c9e1bced7bb89f3e844a7607/appcompat-1.0.2/res/values-large-v4/values-large-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",

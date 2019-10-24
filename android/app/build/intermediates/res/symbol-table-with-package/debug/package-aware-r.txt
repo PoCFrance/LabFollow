@@ -693,6 +693,7 @@ id fitXY
 id focusCrop
 id forever
 id fps_text
+id ghost_view
 id group_divider
 id home
 id homeAsUp
@@ -717,6 +718,7 @@ id notification_background
 id notification_main_column
 id notification_main_column_container
 id parentPanel
+id parent_matrix
 id progress_circular
 id progress_horizontal
 id radio
@@ -733,6 +735,9 @@ id rn_redbox_reload_button
 id rn_redbox_report_button
 id rn_redbox_report_label
 id rn_redbox_stack
+id save_image_matrix
+id save_non_transition_alpha
+id save_scale_type
 id screen
 id scrollIndicatorDown
 id scrollIndicatorUp
@@ -774,6 +779,11 @@ id titleDividerNoCustom
 id title_template
 id top
 id topPanel
+id transition_current_scene
+id transition_layout_save
+id transition_position
+id transition_scene_layoutid_cache
+id transition_transform
 id uniform
 id up
 id useLogo

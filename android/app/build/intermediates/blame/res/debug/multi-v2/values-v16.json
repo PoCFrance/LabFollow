@@ -4,7 +4,7 @@
             "outputFile": "/home/pmonnery/Delivery/PoC/LabFollow/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/home/pmonnery/.gradle/caches/transforms-2/files-2.1/d4884abdcae50e24eb7e310fed1129d8/res/values-v16/values-v16.xml",
+                    "source": "/home/pmonnery/.gradle/caches/transforms-2/files-2.1/46da25c3e2ae6308b2227b660caa604d/core-1.0.1/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/home/pmonnery/.gradle/caches/transforms-2/files-2.1/1747fbe3cde0a6a63f9b0fcbcb5f0dcb/res/values-v16/values-v16.xml",
+                    "source": "/home/pmonnery/.gradle/caches/transforms-2/files-2.1/dfb17c32c9e1bced7bb89f3e844a7607/appcompat-1.0.2/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
