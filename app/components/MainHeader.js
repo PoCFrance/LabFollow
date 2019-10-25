@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text, View, StyleSheet, TouchableOpacity } from 'react-native';
+import { Text, View, StyleSheet, TouchableOpacity, Button } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import { SafeAreaView } from 'react-navigation';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
@@ -14,7 +14,11 @@ export default class MainHeader extends React.Component {
         >
           <SafeAreaView style={styles.container}>
             <View style={styles.leftContainer}>
-              <Text style={styles.mainHeaderTitle}></Text>
+              <Button
+                style={styles.textfieldIcon}
+                title='='
+                onPress={() => this.props.navigation.openDrawer()}
+              />
             </View>
             <View style={styles.centerContainer}>
               <Text style={styles.mainHeaderTitle}>{this.props.title}</Text>

@@ -1,10 +1,10 @@
 import React from 'react';
-import AsyncStorage from '@react-native-community/async-storage';
 import { StyleSheet, View, Text, TextInput, Keyboard, TouchableOpacity } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import Icon from 'react-native-vector-icons/Fontisto';
 import { TouchableWithoutFeedback } from 'react-native-gesture-handler';
 import { loginPatient } from '../network/login'
+import { _storeData } from '../utils/localStorage'
 
 
 Icon.loadFont();
@@ -15,18 +15,13 @@ const HomeScreen = (props) => {
   const [login, setLogin] = React.useState('jean@epitech.eu')
   const [password, setPassword] = React.useState('azerty')
 
-  _storeData = async (key, value) => {
-    try {
-      await AsyncStorage.setItem(key, value);
-    } catch (error) { }
-  };
-
   const handleLogin = async () => {
     console.log(login, password)
     const token = await loginPatient(login, password)
     console.log(token)
 
     await _storeData('token', token)
+    await _storeData('isLogged', true)
     props.navigation.navigate('Studies')
   }
 
