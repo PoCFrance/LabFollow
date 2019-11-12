@@ -1,4 +1,0 @@
-#Sun Oct 20 16:58:10 CEST 2019
-base.0=/home/pmonnery/Delivery/PoC/LabFollow/android/app/build/intermediates/dex/release/mergeDexRelease/out/classes.dex
-path.0=classes.dex
-renamed.0=classes.dex
